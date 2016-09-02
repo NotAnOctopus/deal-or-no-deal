@@ -3,188 +3,206 @@
 <head>
 <style>
 #heron {
-  font-size: 22px;
-  color: green;
-  font-family: Calibri;
+font-size: 22px;
+color: green;
+font-family: Calibri;
 }
- 
 .apples {
-  background-color: white;
-  font-size: 50px;
-  width: 70px;
-  border: 15px solid red;
-  text-align: center;
-  padding: 10px;
-  color: red;
-  font-family: "Calibri";
-  font-weight: bold;
+background-color: white;
+font-size: 40px;
+width: 70px;
+border: 15px solid red;
+text-align: center;
+padding: 5px;
+color: red;
+font-family: Calibri;
+font-weight: bold;
 }
- 
 .oranges {
-  height: 45px;
-  width: 120px;
-  color: white;
-  font-size: 25px;
-  text-align: center;
-  font-family: "Calibri";
-  font-weight: bold;
+height: 30px;
+width: 110px;
+color: white;
+font-size: 25px;
+text-align: center;
+font-family: "Calibri";
+font-weight: bold;
 }
- 
 td {
-  padding: 25px;
+padding: 10px;
+}
+.peanuts, .mark {
+border-radius: 20px;
+width: 110px;
+padding: 20px;
+height: 0px;
+text-align: center;
+line-height: 0px;
+color: white;
+border: 3px solid white;
+font-family: Calibri;
+font-weight: bold;
+font-size: 20px;
+}
+.peanuts {
+background: blue;
+}
+.mark {
+background: red;
 }
 </style>
 </head>
+
 <body>
 <p id="heron">
-deal or no deal
+deal or no deal (work in progress)
 </p>
 <br>
 <p id="offer">Welcome to Deal Or No Deal</p>
 <br>
 <table>
 <tr>
-<td rowspan="6">insert pic of board here that's supposed to update itself when someone picks a box and the value is revealed</td>
+<td rowspan="5">
+<div id="0.01" class="peanuts">1p</div>
+<div id="0.1" class="peanuts">10p</div>
+<div id="0.5" class="peanuts">50p</div>
+<div id="1" class="peanuts">£ 1</div>
+<div id="5" class="peanuts">£ 5</div>
+<div id="10" class="peanuts">£ 10</div>
+<div id="50" class="peanuts">£ 50</div>
+<div id="100" class="peanuts">£ 100</div>
+<div id="250" class="peanuts">£ 250</div>
+<div id="500" class="peanuts">£ 500</div>
+<div id="750" class="peanuts">£ 750</div>
+</td>
 <td>
 <div id="reveal1" class="oranges"></div>
-<div id="uno" class="apples" onclick="reveal(1)">
-1
+<div id="box1" class="apples" onclick="reveal(1)">
 </div>
 </td>
 <td>
 <div id="reveal2" class="oranges"></div>
-<div id="dos" class="apples" onclick="reveal(2)">
-2
+<div id="box2" class="apples" onclick="reveal(2)">
 </div>
 </td>
 <td>
 <div id="reveal3" class="oranges"></div>
-<div id="tres" class="apples" onclick="reveal(3)">
-3
+<div id="box3" class="apples" onclick="reveal(3)">
 </div>
 </td>
 <td>
 <div id="reveal4" class="oranges"></div>
-<div id="cuatro" class="apples" onclick="reveal(4)">
-4
+<div id="box4" class="apples" onclick="reveal(4)">
 </div>
+</td>
+<td>
+<div id="reveal5" class="oranges"></div>
+<div id="box5" class="apples" onclick="reveal(5)">
+</div>
+</td>
+<td rowspan="5">
+<div id="1000" class="mark">£ 1000</div>
+<div id="3000" class="mark">£ 3000</div>
+<div id="5000" class="mark">£ 5000</div>
+<div id="10000" class="mark">£ 10000</div>
+<div id="15000" class="mark">£ 15000</div>
+<div id="20000" class="mark">£ 20000</div>
+<div id="35000" class="mark">£ 35000</div>
+<div id="50000" class="mark">£ 50000</div>
+<div id="75000" class="mark">£ 75000</div>
+<div id="100000" class="mark">£ 100000</div>
+<div id="250000" class="mark">£ 250000</div>
 </td>
 </tr>
 <tr>
 <td>
-<div id="reveal5" class="oranges"></div>
-<div id="cinco" class="apples" onclick="reveal(5)">
-5
-</div>
-</td>
-<td>
 <div id="reveal6" class="oranges"></div>
-<div id="seis" class="apples" onclick="reveal(6)">
-6
+<div id="box6" class="apples" onclick="reveal(6)">
 </div>
 </td>
 <td>
 <div id="reveal7" class="oranges"></div>
-<div id="siete" class="apples" onclick="reveal(7)">
-7
+<div id="box7" class="apples" onclick="reveal(7)">
 </div>
 </td>
 <td>
 <div id="reveal8" class="oranges"></div>
-<div id="ocho" class="apples" onclick="reveal(8)">
-8
+<div id="box8" class="apples" onclick="reveal(8)">
 </div>
 </td>
-</tr>
-<tr>
 <td>
 <div id="reveal9" class="oranges"></div>
-<div id="nueve" class="apples" onclick="reveal(9)">
-9
+<div id="box9" class="apples" onclick="reveal(9)">
 </div>
 </td>
 <td>
 <div id="reveal10" class="oranges"></div>
-<div id="seis" class="apples" onclick="reveal(10)">
-10
+<div id="box10" class="apples" onclick="reveal(10)">
 </div>
 </td>
+</tr>
+<tr>
 <td>
 <div id="reveal11" class="oranges"></div>
-<div id="once" class="apples" onclick="reveal(11)">
-11
+<div id="box11" class="apples" onclick="reveal(11)">
 </div>
 </td>
 <td>
 <div id="reveal12" class="oranges"></div>
-<div id="doce" class="apples" onclick="reveal(12)">
-12
+<div id="box12" class="apples" onclick="reveal(12)">
 </div>
 </td>
-</tr>
-<tr>
 <td>
 <div id="reveal13" class="oranges"></div>
-<div id="trece" class="apples" onclick="reveal(13)">
-13
+<div id="box13" class="apples" onclick="reveal(13)">
 </div>
 </td>
 <td>
 <div id="reveal14" class="oranges"></div>
-<div id="catorce" class="apples" onclick="reveal(14)">
-14
+<div id="box14" class="apples" onclick="reveal(14)">
 </div>
 </td>
 <td>
 <div id="reveal15" class="oranges"></div>
-<div id="quince" class="apples" onclick="reveal(15)">
-15
-</div>
-</td>
-<td>
-<div id="reveal16" class="oranges"></div>
-<div id="dieciseis" class="apples" onclick="reveal(16)">
-16
+<div id="box15" class="apples" onclick="reveal(15)">
 </div>
 </td>
 </tr>
 <tr>
 <td>
+<div id="reveal16" class="oranges"></div>
+<div id="box16" class="apples" onclick="reveal(16)">
+</div>
+</td>
+<td>
 <div id="reveal17" class="oranges"></div>
-<div id="diecisiete" class="apples" onclick="reveal(17)">
-17
+<div id="box17" class="apples" onclick="reveal(17)">
 </div>
 </td>
 <td>
 <div id="reveal18" class="oranges"></div>
-<div id="dieciocho" class="apples" onclick="reveal(18)">
-18
+<div id="box18" class="apples" onclick="reveal(18)">
 </div>
 </td>
 <td>
 <div id="reveal19" class="oranges"></div>
-<div id="diecinueve" class="apples" onclick="reveal(19)">
-19
+<div id="box19" class="apples" onclick="reveal(19)">
 </div>
 </td>
 <td>
 <div id="reveal20" class="oranges"></div>
-<div id="veinte" class="apples" onclick="reveal(20)">
-20
+<div id="box20" class="apples" onclick="reveal(20)">
 </div>
 </td>
 </tr>
 <tr>
 <td>
 <div id="reveal21" class="oranges"></div>
-<div id="veintiuno" class="apples" onclick="reveal(21)">
-21
+<div id="box21" class="apples" onclick="reveal(21)">
 </div>
 </td>
 <td>
 <div id="reveal22" class="oranges"></div>
-<div id="veintidos" class="apples" onclick="reveal(22)">
-22
+<div id="box22" class="apples" onclick="reveal(22)">
 </div>
 </td>
 <td></td>
@@ -192,11 +210,9 @@ deal or no deal
 </tr>
 </table>
 <br>
-<p>TODO: show board on the left
+<p>TODO:
 <br>
 do endgame condition (2 box)
-<br>
-randomise boxes
 <br>
 have contestant pick own box at start
 <br>
