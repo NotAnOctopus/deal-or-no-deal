@@ -38,7 +38,8 @@ function reveal(k) {
   if (boxlist[k]!=0) {
     document.getElementById("reveal"+k).innerHTML=boxlist[k]>=1 ? "£ "+boxlist[k] : 100*boxlist[k]+"p";
     document.getElementById("reveal"+k).style.backgroundColor=(boxlist[k]>=1000 ? "orangered" : "blue");
-    document.getElementById(""+boxlist[k]).style.visibility = "hidden";
+    document.getElementById(""+boxlist[k]).style.opacity=0;
+    setTimeout(function(){document.getElementById(""+boxlist[k]).style.visibility = "hidden";},1000); // is this line really necessary?
     boxlist[k]=0;
     boxcount--;
     if ((boxcount%3==2) && (boxcount<20)){
