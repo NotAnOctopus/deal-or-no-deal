@@ -63,18 +63,18 @@ deal or no deal (work in progress)
 <br>
 <table style="background:radial-gradient(yellow,goldenrod)">
 <tr>
-<td rowspan="5">
+<td rowspan="4">
 <div id="0.01" class="peanuts">1p</div>
 <div id="0.1" class="peanuts">10p</div>
 <div id="0.5" class="peanuts">50p</div>
 <div id="1" class="peanuts">£ 1</div>
 <div id="5" class="peanuts">£ 5</div>
 <div id="10" class="peanuts">£ 10</div>
-<div id="50" class="peanuts">£ 50</div>
-<div id="100" class="peanuts">£ 100</div>
-<div id="250" class="peanuts">£ 250</div>
-<div id="500" class="peanuts">£ 500</div>
-<div id="750" class="peanuts">£ 750</div>
+<div id="50" class="peanuts" style="background:#0020ff">£ 50</div>
+<div id="100" class="peanuts" style="background:#0040ff">£ 100</div>
+<div id="250" class="peanuts" style="background:#0060ff">£ 250</div>
+<div id="500" class="peanuts" style="background:#0080ff">£ 500</div>
+<div id="750" class="peanuts" style="background:#00a0ff">£ 750</div>
 </td>
 <td>
 <div id="reveal1" class="oranges"></div>
@@ -101,12 +101,17 @@ deal or no deal (work in progress)
 <div id="box5" class="apples" onclick="reveal(5)">
 </div>
 </td>
-<td rowspan="5">
-<div id="1000" class="mark">£ 1000</div>
-<div id="3000" class="mark">£ 3000</div>
-<div id="5000" class="mark">£ 5000</div>
-<div id="10000" class="mark">£ 10000</div>
-<div id="15000" class="mark">£ 15000</div>
+<td>
+<div id="reveal6" class="oranges"></div>
+<div id="box6" class="apples" onclick="reveal(6)">
+</div>
+</td>
+<td rowspan="4">
+<div id="1000" class="mark" style="background:#ffa000">£ 1000</div>
+<div id="3000" class="mark" style="background:#ff8000">£ 3000</div>
+<div id="5000" class="mark" style="background:#ff6000">£ 5000</div>
+<div id="10000" class="mark" style="background:#ff4000">£ 10000</div>
+<div id="15000" class="mark" style="background:#ff2000">£ 15000</div>
 <div id="20000" class="mark">£ 20000</div>
 <div id="35000" class="mark">£ 35000</div>
 <div id="50000" class="mark">£ 50000</div>
@@ -116,11 +121,6 @@ deal or no deal (work in progress)
 </td>
 </tr>
 <tr>
-<td>
-<div id="reveal6" class="oranges"></div>
-<div id="box6" class="apples" onclick="reveal(6)">
-</div>
-</td>
 <td>
 <div id="reveal7" class="oranges"></div>
 <div id="box7" class="apples" onclick="reveal(7)">
@@ -141,8 +141,6 @@ deal or no deal (work in progress)
 <div id="box10" class="apples" onclick="reveal(10)">
 </div>
 </td>
-</tr>
-<tr>
 <td>
 <div id="reveal11" class="oranges"></div>
 <div id="box11" class="apples" onclick="reveal(11)">
@@ -153,6 +151,8 @@ deal or no deal (work in progress)
 <div id="box12" class="apples" onclick="reveal(12)">
 </div>
 </td>
+</tr>
+<tr>
 <td>
 <div id="reveal13" class="oranges"></div>
 <div id="box13" class="apples" onclick="reveal(13)">
@@ -168,8 +168,6 @@ deal or no deal (work in progress)
 <div id="box15" class="apples" onclick="reveal(15)">
 </div>
 </td>
-</tr>
-<tr>
 <td>
 <div id="reveal16" class="oranges"></div>
 <div id="box16" class="apples" onclick="reveal(16)">
@@ -185,6 +183,8 @@ deal or no deal (work in progress)
 <div id="box18" class="apples" onclick="reveal(18)">
 </div>
 </td>
+</tr>
+<tr>
 <td>
 <div id="reveal19" class="oranges"></div>
 <div id="box19" class="apples" onclick="reveal(19)">
@@ -195,28 +195,29 @@ deal or no deal (work in progress)
 <div id="box20" class="apples" onclick="reveal(20)">
 </div>
 </td>
-</tr>
-<tr>
 <td>
 <div id="reveal21" class="oranges"></div>
 <div id="box21" class="apples" onclick="reveal(21)">
 </div>
 </td>
 <td>
+</td>
+<td>
+<p style="font-family: Calibri; color: blue; font-weight: bold; font-size: 30px">
+Your Box: --->
+</p>
+</td>
+<td style="border: 5px solid brown">
 <div id="reveal22" class="oranges"></div>
 <div id="box22" class="apples" onclick="reveal(22)">
 </div>
 </td>
-<td></td>
-<td></td>
 </tr>
 </table>
 <br>
 <p>TODO:
 <br>
 do endgame condition (2 box)
-<br>
-have contestant pick own box at start
 <br>
 deal and no deal buttons
 <br>
