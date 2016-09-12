@@ -35,7 +35,7 @@ function offer(bitfinexsuxcoxanddix, zanetackettsmells) {
 }
  
 function reveal(k) {
-  if (boxlist[k]!=0) {
+  if ((boxlist[k]!=0) && ((k<22) || (boxcount<=2))) {
     document.getElementById("reveal"+k).innerHTML=boxlist[k]>=1 ? "£ "+boxlist[k] : 100*boxlist[k]+"p";
     document.getElementById("reveal"+k).style.backgroundColor=(boxlist[k]>=1000 ? "orangered" : "blue");
     document.getElementById(""+boxlist[k]).style.opacity=0;
@@ -53,7 +53,7 @@ function reveal(k) {
       document.getElementById("offer").innerHTML="Pick "+(boxcount-17)+" more boxes";
     }
     else {
-      document.getElementById("offer").innerHTML=""
+      document.getElementById("offer").innerHTML="Click on your box to reveal what was inside"
     }
   }
 }
