@@ -19,6 +19,10 @@ for (sausages=1; sausages<=22; sausages++) {
   batman.push(sausages);
 }
 var spiderman=everydayimshufflin(batman);
+var sheep=false;
+var rollercoastersarefun=0;
+var existentialcrisis=false;
+var platypus=0;
 
 for (avrillavigneisweird=1; avrillavigneisweird<=22; avrillavigneisweird++) {
   document.getElementById("box"+avrillavigneisweird).innerHTML = spiderman[avrillavigneisweird-1]; 
@@ -35,7 +39,7 @@ function offer(bitfinexsuxcoxanddix, zanetackettsmells) {
 }
  
 function reveal(k) {
-  if ((boxlist[k]!=0) && ((k<22) || (boxcount<=2))) {
+  if ((existentialcrisis==false) && (boxlist[k]!=0) && ((k<22) || (boxcount<=2))) {
     document.getElementById("reveal"+k).innerHTML=boxlist[k]>=1 ? "£ "+boxlist[k] : 100*boxlist[k]+"p";
     document.getElementById("reveal"+k).style.backgroundColor=(boxlist[k]>=1000 ? "orangered" : "blue");
     document.getElementById(""+boxlist[k]).style.opacity=0;
@@ -43,8 +47,13 @@ function reveal(k) {
     boxlist[k]=0;
     boxcount--;
     if ((boxcount%3==2) && (boxcount<20)){
-      var platypus = offer(boxlist, boxcount);
-      document.getElementById("offer").innerHTML="Banker's Offer: £ " + +platypus.toPrecision(2);
+      if (sheep==false) {
+        existentialcrisis=true;
+        document.getElementById("thisbuttonisforwimps").style.visibility="visible";
+        document.getElementById("nodeal").style.visibility="visible";
+      }
+      platypus = offer(boxlist, boxcount);
+      document.getElementById("offer").innerHTML="Banker's Offer" + ((sheep==true) ? " would've been" : "") + ": £ " + +platypus.toPrecision(2);
     }
     else if ((boxcount>2) && (boxcount<20)) {
       document.getElementById("offer").innerHTML="Pick "+(boxcount+1)%3+" more box"+(boxcount%3==0 ? "" : "es");
@@ -53,7 +62,23 @@ function reveal(k) {
       document.getElementById("offer").innerHTML="Pick "+(boxcount-17)+" more boxes";
     }
     else {
-      document.getElementById("offer").innerHTML="Click on your box to reveal what was inside"
+      if ((sheep==false) && (rollercoastersarefun==0)) {
+        rollercoastersarefun = boxlist[22];
+      }
+      document.getElementById("offer").innerHTML = "You won: " + (rollercoastersarefun>=1 ? "£ "+rollercoastersarefun : 100*rollercoastersarefun+"p");
+    }
+  }
+}
+
+function icecream(flavour) {
+  if (document.getElementById("nodeal").style.visibility="visible") {
+    existentialcrisis=false;
+    document.getElementById("thisbuttonisforwimps").style.visibility="hidden";
+    document.getElementById("nodeal").style.visibility="hidden";
+    document.getElementById("offer").innerHTML= boxcount>2 ? "Pick 3 more boxes" : "Click on your box to reveal what was inside";
+    if (flavour) {
+      sheep=true;
+      rollercoastersarefun = +platypus.toPrecision(2);
     }
   }
 }
