@@ -51,6 +51,38 @@ background: blue;
 .mark {
 background: red;
 }
+#elephant {
+border-radius: 10px;
+width: 500px;
+padding: 10px;
+height: 40px;
+line-height: 0px;
+background: lightblue;
+color: navy;
+font-weight: bold;
+font-family: Calibri;
+font-size: 18px;
+border: 10px solid red;
+}
+#thisbuttonisforwimps, #nodeal {
+height: 50px;
+text-align: center;
+color: white;
+font-family: Calibri;
+line-height: 0px;
+font-size: 22px;
+font-weight: bold;
+}
+#thisbuttonisforwimps {
+background: limegreen;
+border: 10px solid green;
+visibility: hidden;
+}
+#nodeal {
+background: salmon;
+border: 10px solid red;
+visibility: hidden;
+}
 </style>
 </head>
 
@@ -58,10 +90,28 @@ background: red;
 <p id="heron">
 deal or no deal (work in progress)
 </p>
-<br>
-<p id="offer">Welcome to Deal Or No Deal</p>
+
 <br>
 <table style="background:radial-gradient(yellow,goldenrod)">
+<tr>
+<td colspan="4">
+<div id="elephant">
+<p id="offer">22 identical sealed boxes, £250000 and no questions. Except one...</p>
+</div>
+</td>
+<td>
+<div id="thisbuttonisforwimps" onclick="icecream(1)">
+<p>DEAL</p>
+</div>
+</td>
+<td>
+<div id="nodeal" onclick="icecream(0)">
+<p>NO DEAL</p>
+</div>
+</td>
+<td></td>
+<td></td>
+</tr>
 <tr>
 <td rowspan="4">
 <div id="0.01" class="peanuts">1p</div>
@@ -217,12 +267,9 @@ Your Box:<br>--->
 <br>
 <p>TODO:
 <br>
-do endgame condition (2 box)
-<br>
-deal and no deal buttons
-<br>
 animations (boxes disappear when picked, banker's offer thingy slides in from left)
 <br>
+box swap at end
 </p>
 <script src="i secretly want someone to duct tape me to a ceiling.js"></script>
 </body>
