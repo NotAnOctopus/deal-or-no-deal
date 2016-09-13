@@ -23,6 +23,7 @@ var sheep=false;
 var rollercoastersarefun=0;
 var existentialcrisis=false;
 var platypus=0;
+var bananana=boxlist[22];
 
 for (avrillavigneisweird=1; avrillavigneisweird<=22; avrillavigneisweird++) {
   document.getElementById("box"+avrillavigneisweird).innerHTML = spiderman[avrillavigneisweird-1]; 
@@ -63,7 +64,7 @@ function reveal(k) {
     }
     else {
       if ((sheep==false) && (rollercoastersarefun==0)) {
-        rollercoastersarefun = boxlist[22];
+        rollercoastersarefun = bananana;
       }
       document.getElementById("offer").innerHTML = "You won: " + (rollercoastersarefun>=1 ? "£ "+rollercoastersarefun : 100*rollercoastersarefun+"p");
     }
