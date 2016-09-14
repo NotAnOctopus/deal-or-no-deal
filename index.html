@@ -7,6 +7,10 @@ font-size: 22px;
 color: green;
 font-family: Calibri;
 }
+#intro {
+font-size: 16px;
+font-family: Calibri;
+}
 .apples {
 background-color: white;
 font-size: 40px;
@@ -88,15 +92,17 @@ visibility: hidden;
 
 <body>
 <p id="heron">
-deal or no deal (work in progress)
+Deal Or No Deal (work in progress)
 </p>
-
+<p id="intro">
+22 identical sealed boxes, a quarter of a million pounds, and no questions. Except one...
+</p>
 <br>
 <table style="background:radial-gradient(yellow,goldenrod)">
 <tr>
 <td colspan="4">
 <div id="elephant">
-<p id="offer">22 identical sealed boxes, £250000 and no questions. Except one...</p>
+<p id="offer">Pick 5 boxes before your first offer</p>
 </div>
 </td>
 <td>
@@ -253,7 +259,7 @@ deal or no deal (work in progress)
 <td>
 </td>
 <td>
-<p style="font-family: Calibri; color: grey; font-weight: bold; font-size: 28px">
+<p style="font-family: Calibri; color: darkslategrey; font-weight: bold; font-size: 28px"> // WHY THE HELL is darkgrey lighter than grey in html!?
 Your Box:<br>--->
 </p>
 </td>
@@ -267,7 +273,7 @@ Your Box:<br>--->
 <br>
 <p>TODO:
 <br>
-animations (boxes disappear when picked, banker's offer thingy slides in from left)
+more animations (boxes disappear when picked, banker's offer thingy slides in from left)
 <br>
 box swap at end
 </p>
